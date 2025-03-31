@@ -36,7 +36,7 @@ O Projeto Família 61 Jampa é um projeto que mostra informações e contatos da
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/HvfXdeGqSSznL0pAI5Esq5/DevLinks-%E2%80%A2-Projeto-Discover-(Community)?node-id=1439-736&m=dev). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](<https://www.figma.com/design/HvfXdeGqSSznL0pAI5Esq5/DevLinks-%E2%80%A2-Projeto-Discover-(Community)?node-id=1439-736&m=dev>). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
@@ -44,4 +44,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito por Odir Neto com os ensinamentos da ROCKETSEAT
+Feito por Odir Neto como projeto para finalização do curso DISCOVER, da ROCKETSEAT
