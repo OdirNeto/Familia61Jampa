@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: White;
+  --bg-url: url(./ASSETS/FundoPreto.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0, 5);
+  --social-link-surface-color: rgba(255, 255, 255, 0.1);
+  --switch-bg-url: url(./ASSETS/moon-stars.svg);
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url(./ASSETS/FundoBranco.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.1);
+  --surface-color-hover: rgba(0, 0, 0, 0.5);
+  --social-link-surface-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./ASSETS/sun.svg);
+}
+
+body {
+  /* background-image: url(https://cdn.dooca.store/150396/products/f5q3dl1yky6ljz5yohqxhb5yovqzfo90px1f_450x600.jpg?v=1711209066&webp=0);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  OU PODEMOS ESCREVER TAMBEM DA FORMA MAIS SIMPLIFICADA A SEGUIR:
+  */
+
+  background: var(--bg-url) no-repeat;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#container {
+  width: 360px; /*LARGURA DO CONTEÚDO*/
+  /*
+  margin-right: auto;
+  margin-left: auto;
+  OU PODE SIMPLIFICAR O CODIGO DAS MARGENS DA SEGUINTE FORMA: 
+  */
+  margin: 56px auto 0; /*MARGENS SUPERIOR=56--LATERAIS=automatica--INFERIOR-0*/
+}
+
+#logo {
+  padding: 24px; /*DISTANCIA ENTRE O ELEMENTO E AS BORDAS*/
+  text-align: center; /*ALINHA O CONTEUDO HORIZONTALMENTE*/
+}
+
+#logo img {
+  width: 200px; /*AJUSTA A LARGURA DO CONTEÚDO*/
+}
+
+#logo p {
+  padding-top: 16px; /*AJUSTA A DISTANCIA ENTRE O ELEMENTO E A BORDA SUPERIOR*/
+  font-weight: 500; /*AJUSTA O TAMANHO DA FONTE*/
+  font-size: 32px; /* Essa configuração já vem "de fabrica" em 16px*/
+  line-height: 24px; /*AJUSTA A ALTURA DA LINHA DE TEXTO*/
+  margin-top: 8px; /*AJUSTA O ESPAÇO ENTRE A BORDA DESTE ELEMENTO E A BORDA DO ELEMENTO DE CIMA*/
+}
+
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 5px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+/*NA PARTE DOS LINKS*/
+ul {
+  list-style: none; /*REMOVE OS MARCADORES DAS LISTAS*/
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 24px 0;
+}
+
+ul li a {
+  display: flex; /*tORNA O ELEMENTO EM UM FLEX CONTAINER, PODENDO SER MANIPULADO TODOS OS "FILHOS" COM OUTRAS PROPRIEDADES*/
+  align-items: center;
+  justify-content: center; /*AJUSTA O ALINHAMENTO DOS ITENS E DISTRIBUI O ESPAÇO LIVRE QUE SOBRA NO CONTAINER*/
+
+  padding: 16px 24px; /*AJUSTA O ESPAÇAMENTO ENTRE O ITEM E A BORDA*/
+
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color); /*AJUSTES DA BORDA*/
+  border-radius: 10px; /*CURVAS DA BORDA*/
+
+  backdrop-filter: blur(
+    2px
+  ); /*AJUSTA EFEITOS GRAFICOS NA BORDA, NESTE CASO DESFOQUE DE 2px*/
+  -webkit-backdrop-filter: blur(
+    2px
+  ); /*APLICA O COMANDO A AULGUNS NAVEGADORES ESPECIFICOS*/
+
+  text-decoration: none; /*REMOVE A DECORAÇÃO PADRÃO DO TEXTO, COMO O SUBLINHADO*/
+  font-weight: 500; /*TAMANHO DA FONTE*/
+
+  transition: background 0.3s; /*tRANSIÇÃO DO FUNDO QUANDO O MOUSE PASSA*/
+
+  /*
+  Tambem poderia ser da seguinte forma: 
+  display: block;
+  height: 55px;
+  text-align: center;
+  */
+}
+
+ul li a:hover {
+  /* Este é chamado de pseudo-seletor, que muda a aparencia dos botões quando o mouse passa por cima. */
+
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--stroke-color);
+}
+
+#social-links {
+  display: flex;
+  justify-content: center;
+
+  padding: 10px 0;
+
+  font-size: 36px;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+#social-links a:hover {
+  background: var(--social-link-surface-color);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
