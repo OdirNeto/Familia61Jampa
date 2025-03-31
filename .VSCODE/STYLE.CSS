@@ -53,7 +53,7 @@ body * {
 }
 
 #logo {
-  padding: 24px; /*DISTANCIA ENTRE O ELEMENTO E AS BORDAS*/
+  padding: 24px; /*DISTANCIA ENTRE O ELEMENTO E AS BORDAS.*/
   text-align: center; /*ALINHA O CONTEUDO HORIZONTALMENTE*/
 }
 
