@@ -19,7 +19,7 @@ Projeto criado exclusivamente para a Igreja Família 61 Jampa
 
 <p align="center">
   <img alt="Projeto igreja família 61 jampa" src=".github/preview.jpg" width="80%">
-</p>
+</p>git
 
 ## 🚀 Tecnologias
 
