@@ -44,4 +44,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito por Odir Neto com os ensinamentos da ROCKETSEAT
+Feito por Odir Neto como projeto para finalização do curso DISCOVER, da ROCKETSEAT
