@@ -33,7 +33,8 @@ body {
   OU PODEMOS ESCREVER TAMBEM DA FORMA MAIS SIMPLIFICADA A SEGUIR:
   */
 
-  background: var(--bg-url) no-repeat;
+  background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -182,3 +183,8 @@ footer {
   padding: 10px;
   font-size: 14px;
 }
+
+/* MEDIA QUERIES*/
+@media (
+
+)
